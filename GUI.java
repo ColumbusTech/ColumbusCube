@@ -50,7 +50,7 @@ public class GUI extends JFrame
 					dz = Double.parseDouble(z.getText());
 				} catch (NumberFormatException nfe)
 				{
-					JOptionPane.showMessageDialog(null, "Data is't numeric");
+					JOptionPane.showMessageDialog(null, "Data is incorrect");
 					return;
 				}
 
