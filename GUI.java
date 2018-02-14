@@ -71,9 +71,15 @@ public class GUI extends JFrame
 				}
 
 				V = dx * dy * dz;
-				m = dpress / (dx * dy) / 10;
+				m = dpress / (dx * dz) / 10;
 				Vs = m * ddens;
 				Vc = V - Vs;
+
+				if (Vs > V || Vc <= V)
+				{
+					JOptionPane.showMessageDialog(null, "Data is incorrect", "Error", JOptionPane.ERROR_MESSAGE);
+					return;
+				}
 
 				switch (mode.getSelectedIndex())
 				{
