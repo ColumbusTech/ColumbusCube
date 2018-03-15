@@ -75,7 +75,7 @@ public class GUI extends JFrame
 				Vs = m * ddens;
 				Vc = V - Vs;
 
-				if (Vs > V || Vc <= V)
+				if (Vs > V || Vc <= 0)
 				{
 					JOptionPane.showMessageDialog(null, "Data is incorrect", "Error", JOptionPane.ERROR_MESSAGE);
 					return;
